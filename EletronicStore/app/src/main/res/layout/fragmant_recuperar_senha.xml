@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191920"
+    tools:context=".RecuperarSenha">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1919dp"
+        android:layout_height="448dp"
+        android:gravity="center_horizontal"
+        android:scaleType="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuperar Senha"
+        android:textColor="#eee"
+        android:textSize="30sp"
+        android:id="@+id/lbrecuperarSenha"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:id="@+id/email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbrecuperarSenha"
+        android:background="@drawable/edit_round"
+        android:textColorHint="#eee"
+        android:layout_marginTop="25dp"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        />
+
+    <Button
+        android:id="@+id/btn_recuperar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:background="@drawable/button_rounded"
+        android:textColorHint="#eee"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:padding="15dp"
+        android:text="Recuperar"
+        android:textColor="#ffff"
+        android:onClick="irLogin"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textColor="#eee"
+        android:textSize="20sp"
+        android:id="@+id/lbVoltar"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_recuperar"
+        android:onClick="voltarLogin"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#191920"
-    tools:context=".Cadastro3">
+    tools:context=".TelaCadastro2">
 
     <ImageView
         android:id="@+id/imageView"
@@ -23,7 +23,7 @@
         android:textColor="#eee"
         android:textSize="30sp"
         android:id="@+id/lbcadastro"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="70dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,13 +31,15 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite o CEP"
-        android:id="@+id/CEP"
+        android:hint="Sua senha secreta"
+        android:id="@+id/senha"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lbcadastro"
         android:background="@drawable/edit_round"
         android:textColorHint="#eee"
+        android:textColor="#eee"
+        android:inputType="textPassword"
         android:layout_marginTop="25dp"
         android:layout_margin="25dp"
         android:padding="15dp"
@@ -46,79 +48,36 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Bairro"
-        android:id="@+id/bairro"
+        android:hint="Confirme sua senha secreta"
+        android:id="@+id/confirmarSenha"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CEP"
+        app:layout_constraintTop_toBottomOf="@+id/senha"
         android:background="@drawable/edit_round"
         android:textColorHint="#eee"
-        android:layout_marginTop="15dp"
-        android:layout_margin="25dp"
-        android:padding="15dp"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Logradouro"
-        android:id="@+id/logradouro"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bairro"
-        android:background="@drawable/edit_round"
-        android:textColorHint="#eee"
-        android:layout_marginTop="15dp"
-        android:layout_margin="25dp"
-        android:padding="15dp"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nº"
-        android:id="@+id/numero"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logradouro"
-        android:background="@drawable/edit_round"
-        android:textColorHint="#eee"
-        android:layout_marginTop="15dp"
-        android:layout_margin="25dp"
-        android:padding="15dp"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Cidade"
-        android:id="@+id/cidade"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numero"
-        android:background="@drawable/edit_round"
-        android:textColorHint="#eee"
+        android:textColor="#eee"
+        android:inputType="textPassword"
         android:layout_marginTop="15dp"
         android:layout_margin="25dp"
         android:padding="15dp"
         />
 
     <Button
-        android:id="@+id/btn_finalizar"
+        android:id="@+id/btn_proximo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numero"
+        app:layout_constraintTop_toBottomOf="@+id/confirmarSenha"
         android:background="@drawable/button_rounded"
         android:textColorHint="#eee"
         android:layout_marginTop="35dp"
         android:layout_marginRight="25dp"
         android:layout_marginLeft="25dp"
         android:padding="15dp"
-        android:text="Finalizar"
+        android:text="Proximo"
         android:textColor="#ffff"
-        android:onClick="irCadastro4"
+        android:onClick="irCadastro3"
         />
 
     <TextView
@@ -131,8 +90,8 @@
         android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_finalizar"
-        android:onClick="voltarCadastro2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_proximo"
+        android:onClick="voltarCadastro"
         />
 
     <TextView

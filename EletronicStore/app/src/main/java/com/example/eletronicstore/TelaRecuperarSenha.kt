@@ -1,14 +1,14 @@
 package com.example.eletronicstore
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 
-class RecuperarSenha : AppCompatActivity() {
+class TelaRecuperarSenha : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_tela_recuperar_senha)
     }
 
     fun irLogin(componente: View) {

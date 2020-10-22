@@ -75,4 +75,11 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    fun irCadastro(componente: View) {
+
+        val cadastro = Intent(this, TelaCadastro1::class.java)
+
+        startActivity(cadastro)
+    }
 }

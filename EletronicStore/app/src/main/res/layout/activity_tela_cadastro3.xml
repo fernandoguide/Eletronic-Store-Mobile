@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#191920"
-    tools:context=".Cadastro">
+    tools:context=".TelaCadastro3">
 
     <ImageView
         android:id="@+id/imageView"
@@ -23,7 +23,7 @@
         android:textColor="#eee"
         android:textSize="30sp"
         android:id="@+id/lbcadastro"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,13 +31,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite seu Email"
-        android:id="@+id/email"
+        android:hint="Digite o CEP"
+        android:id="@+id/CEP"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lbcadastro"
         android:background="@drawable/edit_round"
         android:textColorHint="#eee"
+        android:textColor="#eee"
         android:layout_marginTop="25dp"
         android:layout_margin="25dp"
         android:padding="15dp"
@@ -46,13 +47,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite seu Nome"
-        android:id="@+id/nome"
+        android:hint="Bairro"
+        android:id="@+id/bairro"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/CEP"
         android:background="@drawable/edit_round"
         android:textColorHint="#eee"
+        android:textColor="#eee"
         android:layout_marginTop="15dp"
         android:layout_margin="25dp"
         android:padding="15dp"
@@ -61,13 +63,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Informe seu CPF"
-        android:id="@+id/CPF"
+        android:hint="Logradouro"
+        android:id="@+id/logradouro"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome"
+        app:layout_constraintTop_toBottomOf="@+id/bairro"
         android:background="@drawable/edit_round"
         android:textColorHint="#eee"
+        android:textColor="#eee"
         android:layout_marginTop="15dp"
         android:layout_margin="25dp"
         android:padding="15dp"
@@ -76,34 +79,65 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Número de Telefone"
-        android:id="@+id/numeroDeTelefone"
+        android:hint="Nº"
+        android:id="@+id/numero"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CPF"
+        app:layout_constraintTop_toBottomOf="@+id/logradouro"
         android:background="@drawable/edit_round"
         android:textColorHint="#eee"
+        android:textColor="#eee"
+        android:layout_marginTop="15dp"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cidade"
+        android:id="@+id/cidade"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numero"
+        android:background="@drawable/edit_round"
+        android:textColorHint="#eee"
+        android:textColor="#eee"
         android:layout_marginTop="15dp"
         android:layout_margin="25dp"
         android:padding="15dp"
         />
 
     <Button
-        android:id="@+id/btn_proximo"
+        android:id="@+id/btn_finalizar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numeroDeTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/numero"
         android:background="@drawable/button_rounded"
         android:textColorHint="#eee"
         android:layout_marginTop="35dp"
         android:layout_marginRight="25dp"
         android:layout_marginLeft="25dp"
         android:padding="15dp"
-        android:text="Proximo"
+        android:text="Finalizar"
         android:textColor="#ffff"
-        android:onClick="irCadastro2"
+        android:onClick="irCadastro4"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textColor="#eee"
+        android:textSize="20sp"
+        android:id="@+id/lbVoltar"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_finalizar"
+        android:onClick="voltarCadastro2"
         />
 
     <TextView
@@ -116,7 +150,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="85dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_proximo"
+        app:layout_constraintTop_toBottomOf="@+id/lbVoltar"
         />
 
     <TextView
@@ -126,7 +160,7 @@
         android:textColor="#7159c1"
         android:textSize="20sp"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/btn_proximo"
+        app:layout_constraintTop_toBottomOf="@+id/lbVoltar"
         app:layout_constraintLeft_toRightOf="@+id/lbPossuiConta"
         android:onClick="irLogin"
         />

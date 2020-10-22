@@ -1,26 +1,26 @@
 package com.example.eletronicstore
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 
-class Cadastro3 : AppCompatActivity() {
+class TelaCadastro3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_tela_cadastro3)
     }
 
     fun irCadastro4(componente: View) {
 
-        val cadastro4 = Intent(this, Cadastro4::class.java)
+        val cadastro4 = Intent(this, Login::class.java)
 
         startActivity(cadastro4)
     }
 
     fun voltarCadastro2(componente: View) {
 
-        val voltarCadastro2 = Intent(this, Cadastro2::class.java)
+        val voltarCadastro2 = Intent(this, TelaCadastro2::class.java)
 
         startActivity(voltarCadastro2)
     }

@@ -3,17 +3,275 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#191920"
     tools:context=".CarrinhoFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/carrinho"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
-        android:textSize="20sp"
-        />
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_conteudo"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="90dp"
+                android:orientation="vertical"
+                android:id="@+id/ll_card"
+                android:background="@drawable/card_style">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/img_produto"
+                    />
+
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Memória SuperLucy (2x8) 16Gb"
+                    android:id="@+id/txt_descProduto"
+                    android:layout_toRightOf="@+id/img_produto"
+                    android:layout_marginTop="30dp"
+
+                    />
+
+                    <TextView
+                        android:id="@+id/txt_precoProduto"
+                        android:layout_width="146dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_produto"
+                        android:layout_marginTop="70dp"
+                        android:text="R$578,30"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="19sp"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/img_excluirProduto"
+                        android:layout_toRightOf="@+id/txt_descProduto"
+                        android:layout_marginTop="30dp"
+                        android:src="@mipmap/ic_launcher"
+
+                        />
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/card_style"
+                    android:backgroundTint="#d3d3d3"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+
+                        />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:text="1"
+                        android:layout_marginLeft="10dp"
+                        android:background="#FFFFFF"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="R$578,30"
+                        android:textAlignment="textEnd"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="90dp"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_card2"
+                    android:background="@drawable/card_style">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@mipmap/ic_launcher"
+                            android:id="@+id/img_produto2"
+                            />
+
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Memória SuperLucy (2x8) 16Gb"
+                            android:id="@+id/txt_descProduto2"
+                            android:layout_toRightOf="@+id/img_produto2"
+                            android:layout_marginTop="30dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_precoProduto2"
+                            android:layout_width="146dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/img_produto2"
+                            android:layout_marginTop="70dp"
+                            android:text="R$578,30"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="19sp"
+                            />
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/img_excluirProduto2"
+                            android:layout_toRightOf="@+id/txt_descProduto2"
+                            android:layout_marginTop="30dp"
+                            android:src="@mipmap/ic_launcher"
+
+                            />
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/card_style"
+                        android:backgroundTint="#d3d3d3"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"
+
+                            />
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:text="1"
+                            android:layout_marginLeft="10dp"
+                            android:background="#FFFFFF"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            />
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="R$578,30"
+                            android:textAlignment="textEnd"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Total"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="R$1.156,60"
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        />
+
+
+
+
+
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/btn_finalizarCompra"
+                        android:text="Finalizar Pedido"
+                        android:textSize="15sp"
+                        android:background="#7159C1"
+                        android:textColor="#FFFFFF"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+    </ScrollView>
+
 
 
 </RelativeLayout>

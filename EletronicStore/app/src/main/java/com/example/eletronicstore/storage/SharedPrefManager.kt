@@ -20,7 +20,7 @@ class SharedPrefManager private constructor(private val mCtx: Context) {
 
 
     companion object {
-        private val SHARED_PREF_NAME = "fourMinds"
+        private val SHARED_PREF_NAME = "eletronicstore"
         private var mInstance: SharedPrefManager? = null
 
         @Synchronized

@@ -16,153 +16,132 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/background" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cadastro"
-        android:textColor="#eee"
-        android:textSize="30sp"
-        android:id="@+id/lbcadastro"
-        android:layout_marginTop="25dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Digite o CEP"
-        android:id="@+id/CEP"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbcadastro"
-        android:background="@drawable/edit_round"
-        android:textColorHint="#eee"
-        android:textColor="#eee"
-        android:layout_marginTop="25dp"
-        android:layout_margin="25dp"
-        android:padding="15dp"
-        />
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Bairro"
-        android:id="@+id/bairro"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CEP"
-        android:background="@drawable/edit_round"
-        android:textColorHint="#eee"
-        android:textColor="#eee"
-        android:layout_marginTop="15dp"
-        android:layout_margin="25dp"
-        android:padding="15dp"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Logradouro"
-        android:id="@+id/logradouro"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bairro"
-        android:background="@drawable/edit_round"
-        android:textColorHint="#eee"
-        android:textColor="#eee"
-        android:layout_marginTop="15dp"
-        android:layout_margin="25dp"
-        android:padding="15dp"
-        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Cadastro"
+                android:textColor="#eee"
+                android:textSize="30sp"
+                android:layout_gravity="center" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nº"
-        android:id="@+id/numero"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logradouro"
-        android:background="@drawable/edit_round"
-        android:textColorHint="#eee"
-        android:textColor="#eee"
-        android:layout_marginTop="15dp"
-        android:layout_margin="25dp"
-        android:padding="15dp"
-        />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="@drawable/edit_round"
+                android:hint="Digite o CEP"
+                android:padding="15dp"
+                android:textColor="#eee"
+                android:textColorHint="#eee"
+                android:layout_gravity="center" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Cidade"
-        android:id="@+id/cidade"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numero"
-        android:background="@drawable/edit_round"
-        android:textColorHint="#eee"
-        android:textColor="#eee"
-        android:layout_marginTop="15dp"
-        android:layout_margin="25dp"
-        android:padding="15dp"
-        />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="@drawable/edit_round"
+                android:hint="Bairro"
+                android:padding="15dp"
+                android:textColor="#eee"
+                android:textColorHint="#eee"
+                android:layout_gravity="center" />
 
-    <Button
-        android:id="@+id/btn_finalizar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numero"
-        android:background="@drawable/button_rounded"
-        android:textColorHint="#eee"
-        android:layout_marginTop="35dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginLeft="25dp"
-        android:padding="15dp"
-        android:text="Finalizar"
-        android:textColor="#ffff"
-        android:onClick="irCadastro4"
-        />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="@drawable/edit_round"
+                android:hint="Logradouro"
+                android:padding="15dp"
+                android:textColor="#eee"
+                android:textColorHint="#eee"
+                android:layout_gravity="center" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Voltar"
-        android:textColor="#eee"
-        android:textSize="20sp"
-        android:id="@+id/lbVoltar"
-        android:layout_marginTop="20dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_finalizar"
-        android:onClick="voltarCadastro2"
-        />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="@drawable/edit_round"
+                android:hint="Nº"
+                android:padding="15dp"
+                android:textColor="#eee"
+                android:textColorHint="#eee"
+                android:layout_gravity="center" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Já possui uma conta?  "
-        android:textColor="#eee"
-        android:textSize="20sp"
-        android:id="@+id/lbPossuiConta"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="85dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbVoltar"
-        />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="@drawable/edit_round"
+                android:hint="Cidade"
+                android:padding="15dp"
+                android:textColor="#eee"
+                android:textColorHint="#eee"
+                android:layout_gravity="center" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:textColor="#7159c1"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/lbVoltar"
-        app:layout_constraintLeft_toRightOf="@+id/lbPossuiConta"
-        android:onClick="irLogin"
-        />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/button_rounded"
+                android:onClick="irCadastro4"
+                android:padding="15dp"
+                android:text="Finalizar"
+                android:textColor="#ffff"
+                android:textColorHint="#eee"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="voltarCadastro2"
+                android:text="Voltar"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="70dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85dp"
+                    android:text="Já possui uma conta?  "
+                    android:textColor="#eee"
+                    android:textSize="20sp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="irLogin"
+                    android:text="Login"
+                    android:textColor="#7159c1"
+                    android:textSize="20sp"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,41 +9,46 @@
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp">
 
         <LinearLayout
+            android:id="@+id/ll_conteudo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ll_conteudo"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginBottom="60dp">
 
             <LinearLayout
+                android:id="@+id/ll_card"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="90dp"
-                android:orientation="vertical"
-                android:id="@+id/ll_card"
-                android:background="@drawable/card_style">
-                <RelativeLayout
+                android:background="@drawable/card_style"
+                android:orientation="vertical">
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@mipmap/ic_launcher"
                         android:id="@+id/img_produto"
-                        />
+                        android:layout_width="260dp"
+                        android:layout_height="260dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/memoriaram" />
 
 
                     <TextView
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:text="Memória SuperLucy (2x8) 16Gb"
                         android:id="@+id/txt_descProduto"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_toRightOf="@+id/img_produto"
-                        android:layout_marginTop="30dp"
+                        android:text="Memória Adata XPG Spectrix D41 TUF, RGB, 8GB, 3000MHz, DDR4, CL16 - AX4U300038G16-SB41"
+                        android:textSize="20sp"
 
                         />
 
@@ -51,90 +56,81 @@
                         android:id="@+id/txt_precoProduto"
                         android:layout_width="146dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_toRightOf="@+id/img_produto"
-                        android:layout_marginTop="70dp"
                         android:text="R$578,30"
                         android:textColor="#000000"
-                        android:textStyle="bold"
                         android:textSize="19sp"
-                        />
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:id="@+id/img_excluirProduto"
-                        android:layout_toRightOf="@+id/txt_descProduto"
-                        android:layout_marginTop="30dp"
-                        android:src="@mipmap/ic_launcher"
+                        android:textStyle="bold" />
 
-                        />
-
-
-
-                </RelativeLayout>
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp">
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
 
                     <ImageButton
+                        android:id="@+id/btn_icAdicionarCarrinho"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
-                        android:id="@+id/btn_icAdicionarCarrinho"
-                        android:src="@mipmap/ic_launcher"
-                        android:textSize="15sp"
                         android:background="#7159C1"
+                        android:src="@mipmap/ic_launcher"
                         android:textColor="#FFFFFF"
-                        />
+                        android:textSize="15sp" />
+
                     <Button
+                        android:id="@+id/btn_adicionarCarrinho"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
-                        android:id="@+id/btn_adicionarCarrinho"
-                        android:text="Adicionar ao Carrinho"
-                        android:textSize="15sp"
                         android:background="#7159C1"
+                        android:text="Adicionar ao Carrinho"
                         android:textColor="#FFFFFF"
-                        />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
 
+            </LinearLayout>
 
-                </LinearLayout>
             <LinearLayout
+                android:id="@+id/ll_card2"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
-                android:orientation="vertical"
-                android:id="@+id/ll_card2"
-                android:background="@drawable/card_style">
-                <RelativeLayout
+                android:background="@drawable/card_style"
+                android:orientation="vertical">
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@mipmap/ic_launcher"
                         android:id="@+id/img_produto2"
-                        />
+                        android:layout_width="260dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/hdsata" />
 
 
                     <TextView
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:text="Memória SuperLucy (2x8) 16Gb"
                         android:id="@+id/txt_descProduto2"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_toRightOf="@+id/img_produto2"
-                        android:layout_marginTop="30dp"
+                        android:text="HD Seagate BarraCuda, 4TB, 3.5´, SATA - ST4000DM004"
+                        android:textSize="20sp"
 
                         />
 
@@ -142,59 +138,46 @@
                         android:id="@+id/txt_precoProduto2"
                         android:layout_width="146dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_toRightOf="@+id/img_produto2"
-                        android:layout_marginTop="70dp"
                         android:text="R$578,30"
                         android:textColor="#000000"
-                        android:textStyle="bold"
                         android:textSize="19sp"
-                        />
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:id="@+id/img_excluirProduto2"
-                        android:layout_toRightOf="@+id/txt_descProduto2"
-                        android:layout_marginTop="30dp"
-                        android:src="@mipmap/ic_launcher"
+                        android:textStyle="bold" />
 
-                        />
-
-
-
-                </RelativeLayout>
-
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp">
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
 
                     <ImageButton
+                        android:id="@+id/btn_icAdicionarCarrinho2"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
-                        android:id="@+id/btn_icAdicionarCarrinho2"
-                        android:src="@mipmap/ic_launcher"
-                        android:textSize="15sp"
                         android:background="#7159C1"
+                        android:src="@mipmap/ic_launcher"
                         android:textColor="#FFFFFF"
-                        />
+                        android:textSize="15sp" />
+
                     <Button
+                        android:id="@+id/btn_adicionarCarrinho2"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
-                        android:id="@+id/btn_adicionarCarrinho2"
-                        android:text="Adicionar ao Carrinho"
-                        android:textSize="15sp"
                         android:background="#7159C1"
+                        android:text="Adicionar ao Carrinho"
                         android:textColor="#FFFFFF"
-                        />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
 
@@ -202,7 +185,6 @@
 
 
         </LinearLayout>
-
 
 
     </ScrollView>

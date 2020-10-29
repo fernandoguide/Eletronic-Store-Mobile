@@ -82,4 +82,10 @@ class Login : AppCompatActivity() {
 
         startActivity(cadastro)
     }
+
+    fun irRecuperarSenha(Componente: View) {
+        val recuperarSenha = Intent(this, TelaRecuperarSenha::class.java)
+
+        startActivity(recuperarSenha)
+    }
 }

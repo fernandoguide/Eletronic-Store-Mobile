@@ -1,10 +1,13 @@
 package com.example.eletronicstore
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -37,6 +40,7 @@ class CarrinhoFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_carrinho, container, false)
     }
 
+
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -57,3 +61,5 @@ class CarrinhoFragment : Fragment() {
             }
     }
 }
+
+

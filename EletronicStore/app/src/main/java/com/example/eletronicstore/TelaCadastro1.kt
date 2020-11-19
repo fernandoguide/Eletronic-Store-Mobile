@@ -16,6 +16,7 @@ class TelaCadastro1 : AppCompatActivity() {
         val cadastro2 = Intent(this, TelaCadastro2::class.java)
 
         startActivity(cadastro2)
+
     }
 
     fun irLogin(componente: View) {

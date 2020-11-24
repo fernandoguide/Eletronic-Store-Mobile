@@ -40,6 +40,17 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
+                <Spinner
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/combo_formaPagamento"
+                    android:backgroundTint="#FFFFFF"
+                    android:background="@drawable/card_style"
+                    />
+
+
                 <EditText
                     android:id="@+id/et_formaPagamento"
                     android:layout_width="match_parent"
@@ -75,14 +86,16 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/et_endereco"
-                    android:layout_width="match_parent"
+                <Spinner
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:padding="15dp"
-                    android:background="@drawable/edit_round"
-                    android:textColor="#FFFFFF" />
+                    android:id="@+id/combo_endereco"
+                    android:backgroundTint="#FFFFFF"
+                    android:background="@drawable/card_style"
+                    />
+
 
                 <ImageView
                     android:layout_width="25dp"

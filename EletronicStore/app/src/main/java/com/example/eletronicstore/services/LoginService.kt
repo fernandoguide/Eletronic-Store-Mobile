@@ -1,5 +1,6 @@
 package com.example.eletronicstore.services
 
+import com.example.eletronicstore.model.Reset
 import com.example.eletronicstore.model.User
 import okhttp3.ResponseBody
 import retrofit2.Call
@@ -17,6 +18,6 @@ interface LoginService {
     @Headers( "Content-Type: application/json")
     @POST("auth/forgot")
     fun esqueciSenha(
-        @Body body: User
+        @Body body: Reset
     ):Call<ResponseBody>
 }

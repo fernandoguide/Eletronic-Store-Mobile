@@ -7,6 +7,8 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="conclusao_pagamento">Sua solicitação está aguardando a confirmação do seu banco!
+Obrigado por comprar com a gente!</string>
 
 
     <string name="categoria">Categoria</string>
@@ -17,7 +19,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<!--Teste spinner-->
+    <!--Teste spinner-->
     <string-array name="pagamentos_array">
         <item>Mercury</item>
         <item>Venus</item>

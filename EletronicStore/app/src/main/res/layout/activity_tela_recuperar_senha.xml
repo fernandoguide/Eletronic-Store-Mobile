@@ -38,6 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/lbrecuperarSenha"
         android:background="@drawable/edit_round"
         android:textColorHint="#eee"
+        android:textColor="#FFFFFF"
         android:layout_marginTop="25dp"
         android:layout_margin="25dp"
         android:padding="15dp"
@@ -58,7 +59,6 @@
         android:padding="15dp"
         android:text="Recuperar"
         android:textColor="#ffff"
-        android:onClick="irLogin"
         />
 
     <TextView

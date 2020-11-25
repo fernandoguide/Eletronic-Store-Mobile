@@ -74,5 +74,18 @@
                 android:src="@drawable/ic_delete" />
 
         </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/button_rounded"
+            android:padding="15dp"
+            android:text="Salvar Alterações"
+            android:textColor="#eeee" />
+
     </LinearLayout>
 </FrameLayout>

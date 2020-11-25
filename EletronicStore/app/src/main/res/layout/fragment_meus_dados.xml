@@ -76,7 +76,7 @@
             android:layout_marginRight="25dp"
             android:background="@drawable/button_rounded"
             android:padding="15dp"
-            android:text="Finalizar"
+            android:text="Salvar Alterações"
             android:textColor="#eeee" />
 
     </LinearLayout>

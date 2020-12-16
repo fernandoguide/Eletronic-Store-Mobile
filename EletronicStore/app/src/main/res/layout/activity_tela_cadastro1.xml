@@ -38,6 +38,7 @@
                 />
 
             <EditText
+                android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
@@ -50,6 +51,7 @@
                 />
 
             <EditText
+                android:id="@+id/et_nome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
@@ -62,6 +64,7 @@
                  />
 
             <EditText
+                android:id="@+id/et_cpf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
@@ -73,6 +76,7 @@
                 android:layout_gravity="center"/>
 
             <EditText
+                android:id="@+id/et_telefone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"

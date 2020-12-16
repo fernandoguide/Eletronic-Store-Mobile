@@ -12,7 +12,7 @@ class ConfirmacaoCompraActivity : AppCompatActivity() {
     }
 
     fun irParaMenu(componente: View){
-        val menu = Intent(applicationContext, Main::class.java)
+        val menu = Intent(this, Main::class.java)
         startActivity(menu)
     }
 }

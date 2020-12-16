@@ -23,7 +23,7 @@
 
             <LinearLayout
                 android:id="@+id/ll_card"
-                android:layout_width="350dp"
+                android:layout_width="375dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="90dp"
@@ -104,7 +104,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="5dp"
-                        android:text="R$578,30"
+                        android:text="R$ 309,90"
                         android:textAlignment="textEnd"
                         android:textColor="#000000"
                         android:textSize="20sp"
@@ -193,7 +193,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="5dp"
                             android:layout_marginRight="5dp"
-                            android:text="R$578,30"
+                            android:text="R$ 579,90"
                             android:textAlignment="textEnd"
                             android:textColor="#000000"
                             android:textSize="20sp"
@@ -212,7 +212,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="R$1.156,60"
+                        android:text="R$ 889,90"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="25sp"
@@ -223,6 +223,7 @@
                         android:id="@+id/btn_finalizarCompra"
                         android:layout_width="310dp"
                         android:layout_height="50dp"
+                        android:onClick="finCompra"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"

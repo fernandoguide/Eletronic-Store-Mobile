@@ -106,7 +106,7 @@
 
             <!--Fim Linear Endereço edit-->
 
-            <TextView
+            <!--<TextView
                 android:id="@+id/txt_valorTotal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -114,6 +114,7 @@
                 android:text="Valor Total"
                 android:textColor="#FFFFFF"
                 android:textSize="15sp" />
+                -->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -141,7 +142,7 @@
                 />
 
 
-            <LinearLayout
+           <!-- <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -163,7 +164,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="15sp" />
 
-            </LinearLayout>
+            </LinearLayout>-->
 
 
             <LinearLayout
@@ -209,7 +210,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="R$5.305,42"
+                    android:text="R$ 936,20"
                     android:textColor="#FFFFFF"
                     android:textSize="15sp" />
 
@@ -219,6 +220,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
+                android:onClick="irConfirmacao"
                 android:textColor="#FFFFFF"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="25dp"

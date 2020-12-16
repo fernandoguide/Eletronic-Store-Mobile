@@ -4,6 +4,7 @@
     <item
         android:id="@+id/categoria"
         android:title="@string/categoria"
+        android:iconTint="#fff"
         android:icon="@drawable/ic_baseline"/>
     <item
         android:id="@+id/inicio"
@@ -12,5 +13,10 @@
     <item
         android:id="@+id/carrinho"
         android:title="@string/carrinho"
+        android:iconTint="#fff"
         android:icon="@drawable/ic_baseline_shopping_cart"/>
+    <item
+        android:id="@+id/perfil"
+        android:title="@string/perfil"
+        android:icon="@drawable/ic_person"/>
 </menu>

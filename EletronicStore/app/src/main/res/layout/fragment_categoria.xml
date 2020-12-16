@@ -3,17 +3,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#191920"
     android:accessibilityPaneTitle="@string/categoria"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
     tools:context=".CategoriaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+
+
+    <LinearLayout
+        android:id="@+id/listaCategorias"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/categoria"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
-        android:textSize="20sp"
-        />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categoria"
+            android:paddingLeft="22dp"
+            android:layout_marginTop="100dp"
+            android:background="#191920"
+            android:textSize="20sp"
+            android:textColor="#eee"
+            android:id="@+id/title"
+            />
+        <TextView
+            android:id="@+id/bt_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="45dp"
+            android:background="#191920"
+            android:text="All"
+            android:textColor="#eee"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/bt_categoria3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:background="#191920"
+            android:text="SmartFones"
+            android:textColor="#eee"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/bt_categoria4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:background="#191920"
+            android:text="Notebooks"
+            android:textColor="#eee"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/bt_categoria5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:background="#191920"
+            android:text="Computador"
+            android:textColor="#eee"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/bt_categoria6"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:background="#191920"
+            android:text="Monitores"
+            android:textColor="#eee"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/bt_categoria7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:background="#191920"
+            android:text="Perifericos"
+            android:textColor="#eee"
+            android:textSize="22sp" />
+
+    </LinearLayout>
 
 </RelativeLayout>

@@ -25,7 +25,7 @@ class TelaPagamentoActivity : AppCompatActivity(), AdapterView.OnItemSelectedLis
 
     private var spinner_end:Spinner ? = null
     private var arrayAdapter_end:ArrayAdapter<String> ? = null
-    private var itemList_end = arrayOf("Cartão Crédito", "Cartão débito", "Boleto")
+    private var itemList_end = arrayOf("Rua Jose Floriano 100, Jd Guarani", "Rua do fundo 132, Centro", "Avenida Abacate 20, Vila Velha")
 
 
 

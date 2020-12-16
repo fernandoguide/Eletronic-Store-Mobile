@@ -51,4 +51,14 @@ object ClientEletronicStore {
 
         retrofit.create(LoginService::class.java)
     }
+
+    val endpoint: CategoriaService by lazy {
+        val retrofit = Retrofit.Builder()
+            .baseUrl(BASE_URL_HEROKU)
+            .addConverterFactory(GsonConverterFactory.create())
+            .client(okHttpClient)
+            .build()
+
+        retrofit.create(CategoriaService::class.java)
+    }
 }

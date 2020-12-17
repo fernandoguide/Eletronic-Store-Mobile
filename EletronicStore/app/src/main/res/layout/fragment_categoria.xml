@@ -28,66 +28,160 @@
             android:textColor="#eee"
             android:id="@+id/title"
             />
-        <TextView
-            android:id="@+id/bt_categoria"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="30dp"
+            android:orientation="horizontal"
             android:layout_marginTop="45dp"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_blur_circular"
+                android:layout_marginLeft="22dp"
+                />
+
+        <TextView
+            android:id="@+id/bt_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
             android:background="#191920"
             android:text="All"
             android:textColor="#eee"
             android:textSize="22sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_smartphone"
+                android:layout_marginLeft="22dp"
+                />
         <TextView
             android:id="@+id/bt_categoria3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="30dp"
-            android:layout_marginTop="40dp"
             android:background="#191920"
             android:text="SmartFones"
             android:textColor="#eee"
             android:textSize="22sp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_laptop"
+                android:layout_marginLeft="22dp"
+                />
+
         <TextView
             android:id="@+id/bt_categoria4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="30dp"
-            android:layout_marginTop="40dp"
             android:background="#191920"
             android:text="Notebooks"
             android:textColor="#eee"
             android:textSize="22sp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="22dp"
+                android:src="@drawable/ic_desktop_mac"
+                />
         <TextView
             android:id="@+id/bt_categoria5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="30dp"
-            android:layout_marginTop="40dp"
+
             android:background="#191920"
             android:text="Computador"
             android:textColor="#eee"
             android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="22dp"
+                android:src="@drawable/ic_desktop_windows"
+                />
+
         <TextView
             android:id="@+id/bt_categoria6"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:paddingLeft="30dp"
-            android:layout_marginTop="40dp"
             android:background="#191920"
             android:text="Monitores"
             android:textColor="#eee"
             android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="22dp"
+                android:src="@drawable/ic_mouse"
+                />
+
         <TextView
             android:id="@+id/bt_categoria7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="30dp"
-            android:layout_marginTop="40dp"
             android:background="#191920"
             android:text="Perifericos"
             android:textColor="#eee"
             android:textSize="22sp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

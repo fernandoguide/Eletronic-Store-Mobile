@@ -190,4 +190,12 @@ class Main : AppCompatActivity() {
 
         }
     }
+
+    fun colocarCarrinho(view: View) {
+
+            Toast.makeText(applicationContext, "Produto adicionado ao carrinho", Toast.LENGTH_LONG).show()
+
+    }
+
+
 }

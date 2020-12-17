@@ -10,7 +10,10 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp">
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
 
         <LinearLayout
             android:id="@+id/ll_conteudo"
@@ -21,7 +24,7 @@
 
             <LinearLayout
                 android:id="@+id/ll_card"
-                android:layout_width="375dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="90dp"
@@ -35,33 +38,38 @@
 
                     <ImageView
                         android:id="@+id/img_produto"
-                        android:layout_width="260dp"
+                        android:layout_width="match_parent"
                         android:layout_height="260dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_gravity="center"
                         android:src="@mipmap/memoriaram" />
 
 
                     <TextView
                         android:id="@+id/txt_descProduto"
-                        android:layout_width="300dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
                         android:layout_toRightOf="@+id/img_produto"
                         android:text="Memória Adata XPG Spectrix D41 TUF, RGB, 8GB, 3000MHz, DDR4, CL16 - AX4U300038G16-SB41"
-                        android:textSize="20sp"
+                        android:textSize="30sp"
 
                         />
 
                     <TextView
                         android:id="@+id/txt_precoProduto"
-                        android:layout_width="146dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
                         android:layout_toRightOf="@+id/img_produto"
                         android:text="R$ 309,90"
                         android:textColor="#000000"
-                        android:textSize="19sp"
+                        android:textSize="30sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -75,8 +83,8 @@
 
                     <ImageButton
                         android:id="@+id/btn_icAdicionarCarrinho"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
@@ -88,14 +96,16 @@
                     <Button
                         android:id="@+id/btn_adicionarCarrinho"
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
                         android:background="#7159C1"
+                        android:onClick="colocarCarrinho"
                         android:text="Adicionar ao Carrinho"
                         android:textColor="#FFFFFF"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        tools:ignore="OnClick" />
                 </LinearLayout>
 
 
@@ -103,7 +113,7 @@
 
             <LinearLayout
                 android:id="@+id/ll_card2"
-                android:layout_width="375dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
@@ -125,12 +135,14 @@
 
                     <TextView
                         android:id="@+id/txt_descProduto2"
-                        android:layout_width="300dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
                         android:layout_gravity="center"
                         android:layout_toRightOf="@+id/img_produto2"
                         android:text="HD Seagate BarraCuda, 4TB, 3.5´, SATA - ST4000DM004"
-                        android:textSize="20sp"
+                        android:textSize="30sp"
 
                         />
 
@@ -140,10 +152,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
                         android:layout_toRightOf="@+id/img_produto2"
                         android:text="579,90"
                         android:textColor="#000000"
-                        android:textSize="19sp"
+                        android:textSize="30sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -157,8 +170,8 @@
 
                     <ImageButton
                         android:id="@+id/btn_icAdicionarCarrinho2"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
@@ -170,14 +183,16 @@
                     <Button
                         android:id="@+id/btn_adicionarCarrinho2"
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
                         android:background="#7159C1"
                         android:text="Adicionar ao Carrinho"
+                        android:onClick="colocarCarrinho"
                         android:textColor="#FFFFFF"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        tools:ignore="OnClick" />
                 </LinearLayout>
 
 
@@ -185,7 +200,7 @@
 
             <LinearLayout
                 android:id="@+id/ll_card3"
-                android:layout_width="375dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
@@ -199,8 +214,10 @@
 
                     <ImageView
                         android:id="@+id/img_pen"
-                        android:layout_width="260dp"
-                        android:layout_height="260dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
                         android:layout_gravity="center"
                         android:src="@mipmap/pendrive"
                         android:layout_marginTop="30dp"
@@ -210,25 +227,28 @@
 
                     <TextView
                         android:id="@+id/txt_descPen"
-                        android:layout_width="300dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
                         android:layout_gravity="center"
                         android:layout_toRightOf="@+id/img_produto"
                         android:text="Pen Drive Multilaser Twist USB 2.0 8GB PD587"
-                        android:textSize="20sp"
+                        android:textSize="30sp"
 
                         />
 
                     <TextView
                         android:id="@+id/txt_precoPen"
-                        android:layout_width="146dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
                         android:layout_toRightOf="@+id/img_pen"
                         android:text="R$ 18,90"
                         android:textColor="#000000"
-                        android:textSize="19sp"
+                        android:textSize="30sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -242,8 +262,8 @@
 
                     <ImageButton
                         android:id="@+id/btn_icAdicionarCarrinho3"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
@@ -255,7 +275,7 @@
                     <Button
                         android:id="@+id/btn_adicionarCarrinho4"
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
@@ -268,6 +288,269 @@
 
             </LinearLayout>
 
+
+            <LinearLayout
+                android:id="@+id/ll_card5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/card_style"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_produto5"
+                        android:layout_width="260dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/mouselogitech" />
+
+
+                    <TextView
+                        android:id="@+id/txt_descProduto5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/img_produto2"
+                        android:text="Mouse Logitech M90 Preto 1000DPI"
+                        android:textSize="30sp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_precoProduto5"
+                        android:layout_width="146dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/img_produto2"
+                        android:text="R$ 24,90"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_icAdicionarCarrinho5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#7159C1"
+                        android:src="@mipmap/ic_launcher"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btn_adicionarCarrinho5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#7159C1"
+                        android:text="Adicionar ao Carrinho"
+                        android:onClick="colocarCarrinho"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        tools:ignore="OnClick" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_card6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/card_style"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_produto6"
+                        android:layout_width="260dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/monitorlg" />
+
+
+                    <TextView
+                        android:id="@+id/txt_descProduto6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/img_produto2"
+                        android:text="Monitor LG LED 29´ Ultrawide, IPS, HDMI, FreeSync - 29WK500   "
+                        android:textSize="30sp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_precoProduto6"
+                        android:layout_width="146dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/img_produto2"
+                        android:text="R$ 999,90"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_icAdicionarCarrinho6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#7159C1"
+                        android:src="@mipmap/ic_launcher"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btn_adicionarCarrinho6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#7159C1"
+                        android:text="Adicionar ao Carrinho"
+                        android:onClick="colocarCarrinho"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        tools:ignore="OnClick" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_card7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/card_style"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_produto7"
+                        android:layout_width="260dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/computadorcompleto" />
+
+
+                    <TextView
+                        android:id="@+id/txt_descProduto7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/img_produto2"
+                        android:text="Computador Gamer G-Fire AMD Ryzen 5 2400G, 8GB, HD 1TB, Radeon
+                        RX Vega 11 (integrada), Linux - HTG -R253"
+                        android:textSize="30sp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_precoProduto7"
+                        android:layout_width="146dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/img_produto2"
+                        android:text="R$ 2.221,90"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_icAdicionarCarrinho7"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#7159C1"
+                        android:src="@mipmap/ic_launcher"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btn_adicionarCarrinho7"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#7159C1"
+                        android:text="Adicionar ao Carrinho"
+                        android:onClick="colocarCarrinho"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        tools:ignore="OnClick" />
+                </LinearLayout>
+
+
+            </LinearLayout>
 
         </LinearLayout>
 

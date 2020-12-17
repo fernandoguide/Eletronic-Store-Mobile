@@ -46,12 +46,12 @@ class Login : AppCompatActivity() {
                                 if (auth != null) {
                                     sessionManager.saveAuthToken(auth)
                                 }
-                                Toast.makeText(applicationContext, "Login success ", Toast.LENGTH_LONG).show()
+                                Toast.makeText(applicationContext, "Login realizado com sucesso", Toast.LENGTH_LONG).show()
                                 val intent = Intent(applicationContext, Main::class.java)
                                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                                 startActivity(intent)
                             } else {
-                                Toast.makeText(applicationContext, "Login Fail", Toast.LENGTH_LONG)
+                                Toast.makeText(applicationContext, "Falha ao efetuar o login", Toast.LENGTH_LONG)
                                     .show()
                             }
 

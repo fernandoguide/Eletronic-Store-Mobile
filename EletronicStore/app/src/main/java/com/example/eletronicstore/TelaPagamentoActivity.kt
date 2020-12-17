@@ -29,12 +29,12 @@ class TelaPagamentoActivity : AppCompatActivity(), AdapterView.OnItemSelectedLis
 
 
 
-    fun carregarEndereco(){
+    fun carregarComboEnd(){
         spinner_end = findViewById(R.id.combo_endereco)
-        arrayAdapter_end = ArrayAdapter(applicationContext , android.R.layout.simple_spinner_dropdown_item
+        arrayAdapter_end= ArrayAdapter(applicationContext , android.R.layout.simple_spinner_dropdown_item
             , itemList_end)
 
-        spinner_end?.adapter = arrayAdapter_pgto
+        spinner_end?.adapter = arrayAdapter_end
     }
 
 
@@ -60,7 +60,7 @@ class TelaPagamentoActivity : AppCompatActivity(), AdapterView.OnItemSelectedLis
 
         carregarCombo()
 
-        carregarEndereco()
+        carregarComboEnd()
     }
 
 
@@ -77,6 +77,11 @@ class TelaPagamentoActivity : AppCompatActivity(), AdapterView.OnItemSelectedLis
     fun irConfirmacao(componente:View){
         val confirm = Intent(applicationContext, ConfirmacaoCompraActivity::class.java)
         startActivity(confirm)
+    }
+
+    fun voltarCarrinho(componente: View){
+        val voltarC = Intent(applicationContext, Main::class.java)
+        startActivity(voltarC)
     }
 
 }

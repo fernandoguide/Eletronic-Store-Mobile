@@ -23,11 +23,14 @@
     <include layout="@layout/content_main" />
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:id="@+id/bottomNav"
         android:layout_alignParentBottom="true"
         android:background="#28272C"
         android:outlineAmbientShadowColor="#000"
+        app:itemIconTint="@drawable/tab_color"
+        app:itemTextColor="@drawable/tab_color"
+        app:labelVisibilityMode="labeled"
         app:menu="@menu/menu"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
 

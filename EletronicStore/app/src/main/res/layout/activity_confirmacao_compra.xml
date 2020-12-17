@@ -62,6 +62,7 @@
         android:layout_marginRight="25dp"
         android:layout_marginLeft="25dp"
         android:padding="15dp"
+        android:onClick="irParaMenu"
         />
 
 

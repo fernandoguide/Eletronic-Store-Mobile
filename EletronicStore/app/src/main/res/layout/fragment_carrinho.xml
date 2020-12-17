@@ -23,8 +23,10 @@
 
             <LinearLayout
                 android:id="@+id/ll_card"
-                android:layout_width="375dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="90dp"
                 android:layout_marginBottom="60dp"
@@ -44,10 +46,11 @@
 
                     <TextView
                         android:id="@+id/txt_descProduto"
-                        android:layout_width="150dp"
+                        android:layout_width="240dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
                         android:layout_toRightOf="@+id/img_produto"
+                        android:textSize="20dp"
                         android:text="Memória Adata XPG Spectrix D41 TUF, RGB, 8GB, 3000MHz, DDR4, CL16 - AX4U300038G16-SB41"
 
                         />
@@ -114,7 +117,7 @@
 
                 <LinearLayout
                     android:id="@+id/ll_card2"
-                    android:layout_width="350dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginTop="90dp"
@@ -133,9 +136,10 @@
 
                         <TextView
                             android:id="@+id/txt_descProduto2"
-                            android:layout_width="150dp"
+                            android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="30dp"
+                            android:textSize="20dp"
                             android:layout_toRightOf="@+id/img_produto2"
                             android:text="HD Seagate BarraCuda, 4TB, 3.5´, SATA - ST4000DM004"
 

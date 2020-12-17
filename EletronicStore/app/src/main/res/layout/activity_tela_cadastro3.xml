@@ -36,6 +36,7 @@
                 android:layout_gravity="center" />
 
             <EditText
+                android:id="@+id/et_cep"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
@@ -47,6 +48,7 @@
                 android:layout_gravity="center" />
 
             <EditText
+                android:id="@+id/et_bairro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
@@ -58,6 +60,7 @@
                 android:layout_gravity="center" />
 
             <EditText
+                android:id="@+id/et_logradouro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
@@ -69,6 +72,7 @@
                 android:layout_gravity="center" />
 
             <EditText
+                android:id="@+id/et_numero"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
@@ -80,6 +84,7 @@
                 android:layout_gravity="center" />
 
             <EditText
+                android:id="@+id/et_cidade"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
@@ -91,6 +96,7 @@
                 android:layout_gravity="center" />
 
             <Button
+                android:id="@+id/btn_finalizar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"

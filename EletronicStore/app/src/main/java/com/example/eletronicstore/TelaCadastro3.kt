@@ -87,18 +87,19 @@ class TelaCadastro3 : AppCompatActivity() {
                     }
                 )
         }
-        fun voltarCadastro2(componente: View) {
+    }
 
-            val voltarCadastro2 = Intent(this, TelaCadastro2::class.java)
+    fun voltarCadastro2(componente: View) {
 
-            startActivity(voltarCadastro2)
-        }
+        val voltarCadastro2 = Intent(this, TelaCadastro2::class.java)
 
-        fun irLogin(componente: View) {
+        startActivity(voltarCadastro2)
+    }
 
-            val login = Intent(this, Login::class.java)
+    fun irLogin(componente: View) {
 
-            startActivity(login)
-        }
+        val login = Intent(this, Login::class.java)
+
+        startActivity(login)
     }
 }
